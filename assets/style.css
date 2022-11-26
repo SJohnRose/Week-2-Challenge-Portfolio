@@ -1,0 +1,39 @@
+:root {
+
+}
+
+* {
+
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: lemonchiffon;
+}
+
+nav li {
+    text-align: right;
+    list-style: none;
+    
+}
+
+/* For Tablets */
+@media screen and (max-width: 992px) (
+    
+)
+
+/* For large smartphones */
+@media screen and (max-width: 768px) (
+    
+)
+
+/* For small smartphones */
+@media screen and (max-width: 576px) (
+    
+)
+
