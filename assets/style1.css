@@ -19,26 +19,23 @@ body p {
     font-style: oblique;
 }
 
-.pattern {
-    background-image: url("./images/pattern.jpg");
-    background-repeat: repeat-x;
-    width: 2000px;
-    height: 100px;
-}
-
-nav h1 {
-    font-style: italic;
-    font-size: 25px;
-    padding-right: 1100px;
-}
-
 nav {
     display: flex;
     background-color: lightslategray;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    width: auto;
 }
+
+nav h1 {
+    font-style: italic;
+    font-size: 30px;
+    text-shadow: 0 0 3px white;
+    padding-right: 1200px;
+}
+
+
 
 nav a {
     text-align: right;
@@ -49,65 +46,108 @@ nav a {
     font-weight: bold;
 }
 
-#aboutme-section .title {
-    display: flex; 
-    height: 400px;
-    flex-direction: column;
-    border-right-width: 6px;
-    border-right-style: solid;
-    border-right-color: brown;
-    font-size: 25px;
-
+nav a:hover {
+    color: blue;
 }
 
+.pattern {
+    display: block;
+    background-repeat: repeat-x;
+    width: auto;
+    height: 50px;
+}
+
+h2 {
+    color: navy;
+    font-size: 25px;
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Container for About Me section */
 #aboutme-section {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    height: 50px;
+    height: 150px;
+    width: auto;
+    padding-bottom: 10px;
 }
 
+#aboutme-section .right-border {
+    border-right: 5px solid navy;
+    height: 100px;
+}
+
+/* Container for Work section */
 #work-section {
     display: flex;
-    flex-wrap: wrap;
-    flex: 4;
-    align-items: flex-start;
     padding-left: 20px;
-    padding-top: 100px;
+    padding-bottom: 10px;
+    width: auto;
+    height: 350px;
 }
 
+#work-section .right-border {
+    border-right: 5px solid navy;
+    height: 300px; 
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+/* Styling for individual prpject items */
 .myproj {
+    position: relative;
     border-style :solid;
-    border-width: 2px;
-    padding: 20px;
-    flex: 0 0 300px;
-    margin: 10px;
+    border-width: 1px;
+    padding: 0px;
     border-radius: 10px;
-    background-color:rgb(82, 170, 197)
-    margin-left: 10px;
+    background-color:darkslategrey;
 }
 
 .myproj header {
+    position: absolute;
     font-size: 30px;
     font-weight: bolder;
-    color:blanchedalmond
+    color:blanchedalmond;
+    background-color: darkgrey;
+    top: 25%;
 }
 
 .myproj .proj-image {
     width: 350px;
-    height: 250px;
+    height: 150px;
     border: 1px solid black;
-    margin: 25px;
-    
+    margin: 5px;
+       
 }
 
+/* Container for contact section */
 #contact-section {
     display: flex;
     flex-direction:row;
     align-content:flex-start;
+    width: auto;
+    height: 100px;
 }
 
-/* For Tablets */
+#contact-section .right-border {
+    border-right: 5px solid navy;
+    height: 100px;
+}
+
+
+/* Responsive properties For various devices */
+/* For tablets */
 @media screen and (max-width: 992px) {
     nav {
         flex-direction: column;
@@ -116,7 +156,7 @@ nav a {
 
 /* For large smartphones */
 @media screen and (max-width: 768px) {
-    nav {
+    nav, .projects {
         flex-direction: column;
     }
 
