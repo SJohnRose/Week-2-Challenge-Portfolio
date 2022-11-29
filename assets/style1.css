@@ -1,5 +1,5 @@
 :root {
-    --pagecolor: rgb(231, 169, 169);
+    --pagecolor: rgb(241, 217, 217);
         
 }
 
@@ -86,12 +86,12 @@ h2 {
     padding-left: 20px;
     padding-bottom: 10px;
     width: auto;
-    height: 350px;
+    height: 450px;
 }
 
 #work-section .right-border {
     border-right: 5px solid navy;
-    height: 300px; 
+    height: 350px; 
 }
 
 .projects {
@@ -112,6 +112,10 @@ h2 {
     padding: 0px;
     border-radius: 10px;
     background-color:darkslategrey;
+}
+
+.myproj:hover {
+    transform: scale(1.5,1.5);
 }
 
 .myproj header {
