@@ -1,5 +1,5 @@
 :root {
-    --pagecolor: rgb(231, 169, 169);
+    --pagecolor: rgb(168, 177, 190);
         
 }
 
@@ -16,13 +16,8 @@ body {
 body p {
     font-size: 20px;
     font-weight: 200;
+    width: 100%;
     font-style: oblique;
-}
-
-nav header {
-    font-style: italic;
-    font-size: 25px;
-    padding-right: 1100px;
 }
 
 nav {
@@ -31,6 +26,23 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    width: auto;
+}
+
+nav h1 {
+    font-style: italic;
+    font-size: 30px;
+    text-shadow: 0 0 3px white;
+    padding-right: 18px;
+}
+
+nav img {
+    text-align: left;
+    width: 100px;
+    height: 100px;
+    padding-right: 1070px;
+    border:rgb(2, 2, 54);
+    border-width: 1px;
 }
 
 nav a {
@@ -42,108 +54,146 @@ nav a {
     font-weight: bold;
 }
 
-.subtitles {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 700px;
-    text-align: right;
-    padding-right: 16px;
-    background-color: lightblue;
+nav a:hover {
+    color: blue;
 }
 
-.sections {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 700px;
-    background-color:rgb(231, 169, 169);
+.pattern {
+    display: block;
+    background-repeat: repeat-x;
+    width: auto;
+    height: 100px;
 }
 
-.subtitles .title {
-    display: flex; 
-    height: 400px;
-    flex-direction: column;
-    border-right-width: 6px;
-    border-right-style: solid;
-    border-right-color: brown;
+h2 {
+    color: navy;
     font-size: 25px;
-
+    width: 15%;
+    text-align: right;
+    padding-right: 10px;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
-    
-}
-
+/* Container for About Me section */
 #aboutme-section {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    height: 50px;
+    height: 250px;
+    width: auto;
+    padding-bottom: 20px;
 }
 
+#aboutme-section .right-border {
+    border-right: 5px solid navy;
+    height: 100px;
+}
+
+#aboutme-section .content {
+    width: 75%;
+    margin-left: 5px;
+}
+
+/* Container for Work section */
 #work-section {
     display: flex;
-    flex-wrap: wrap;
-    flex: 4;
-    align-items: flex-start;
     padding-left: 20px;
-    padding-top: 100px;
+    padding-bottom: 30px;
+    width: auto;
+    height: 650px;
 }
 
+#work-section .right-border {
+    border-right: 5px solid navy;
+    height: 650px; 
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+/* Styling for individual prpject items */
 .myproj {
+    position: relative;
     border-style :solid;
-    border-width: 2px;
-    padding: 20px;
-    flex: 0 0 300px;
-    margin: 10px;
+    border-width: 1px;
+    padding: 0px;
     border-radius: 10px;
-    background-color:rgb(82, 170, 197)
-    margin-left: 10px;
+    background-color:darkslategrey;
+}
+
+.myproj:hover {
+    transform: scale(1.5,1.5);
 }
 
 .myproj header {
+    position: absolute;
     font-size: 30px;
     font-weight: bolder;
-    color:blanchedalmond
+    color:rgb(12, 26, 160);
+    background-color: darkgrey;
+    border-radius: 2px;
+    top: 25%;
 }
 
 .myproj .proj-image {
     width: 350px;
-    height: 350px;
+    height: 150px;
     border: 1px solid black;
-    margin: 25px;
-    
+    margin: 5px;
+       
 }
 
+/* Container for contact section */
 #contact-section {
     display: flex;
     flex-direction:row;
     align-content:flex-start;
+    width: auto;
+    padding-top: 30px;
+    height: 100px;
 }
 
-/* For Tablets */
+#contact-section .right-border {
+    border-right: 5px solid navy;
+    height: 100px;
+}
+
+#contact-section .contact {
+    display: block;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.contact a {
+    padding: 10px;
+}
+
+/* Responsive properties For various devices */
+/* For tablets */
 @media screen and (max-width: 992px) {
     nav {
         flex-direction: column;
     }
-}
-
-/* For large smartphones */
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
+    #aboutme-section, #work-section, #contact-section, nav, .pattern {
+        width: 100%;
     }
-
 }
+
 
 /* For small smartphones */
 @media screen and (max-width: 576px) {
     nav {
         flex-direction: column;
+    }
+    #aboutme-section, #work-section, #contact-section, nav, .pattern {
+        width: 100%;
     }
 
 }

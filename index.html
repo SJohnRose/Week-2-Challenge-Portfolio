@@ -2,68 +2,79 @@
 <html>
     <head>
         <title> Portfolio </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
     </head>
     <body>
         <!-- Navbar -->
         <nav>
-            <header>
-                <h1> Shamini John Rose </h1>
-            </header>
+            <h1> Shamini John Rose </h1>
+            <img src = "./images/Shamini.jpg" alt = "developer photo"/>
             <a href="#about-section"> About Me </a>
             <a href="#work-section"> Work </a>
             <a href="#contact-section"> Contact </a>
-            <a href="#"> Resume </a>
+            <a href="./assets/Shamini-resume-2022.pdf"> Resume </a>
         </nav>
 
-        <div class="main">
-        <div class="subtitles">
-        <div class="title">
-            <h2> About Me </h2>
+        <div class="pattern" style="background-image: url('./images/pattern.jpg')""> 
+            
         </div>
-        <div class="title">
-            <h2> Work Samples </h2>
-        </div>
-        <div class="title">
-            <h2> Contact Me </h2>
-        </div>
-        </div>
-
-        <div class="sections"> 
+               
         <section id="aboutme-section">
-            <p> Hello, I'm Shamini. I'm passionate about coding and currently learning HTML and CSS through a bootcamp from Monash University </p>
-            <br/> <br/>
+            <h2> About Me </h2>
+            <div class="right-border">
+            </div>
+            <div class="content">
+                <p> Hello, I'm Shamini. i have been teaching coding for high school students for the past 
+                five years. Currently, I'm learning to code in HTML, CSS and JavaScript through a bootcamp. My career goal is to 
+                become a web developer.
+                </p>
+                <p> I can do basic coding in Python but I still have to learn advanced coding concepts.
+                I am new to Git as well but I have learnt how to create repositories, add and commit files and 
+                also create and merge branches to the main repo. </p>
+                <p> Learning to code is challenging but promises to be exciting in the end!</p>
+
+            </div>
         </section>
         
         <section id="work-section">
+            <h2> Work Samples </h2>
+            <div class="right-border">
+            </div>
+            <div class="projects">
             <section class="myproj">
                 <header> Project 1</header>
-                <img class="proj-image" src="./images/Proj1-image.jpg" alt=""/>
+                <a href="https://github.com/SJohnRose/prework-study-guide"><img class="proj-image" src="./images/Proj1-image.jpg" alt="Project 1 image"/></a>
             </section>
             <section class="myproj">
                 <header> Project 2</header>
-                <img class="proj-image" src="./images/Proj2-image.jpg" alt=""/>
+                <a href="https://github.com/SJohnRose/Week1-Challenge"><img class="proj-image" src="./images/Proj2-image.jpg" alt="Project 2 image"/></a>
             </section>
             <section class="myproj">
                 <header> Project 3</header>
-                <img class="proj-image" src="./images/Proj3-image.jpg" alt=""/>
+                <a href="https://github.com/SJohnRose/CSS-Mini-Project"><img class="proj-image" src="./images/Proj3-image.jpg" alt="Project 3 image"/></a>
             </section>
             <section class="myproj">
                 <header> Project 4</header>
-                <img class="proj-image" src="./images/Proj4-image.jpg" alt=""/>
+                <a href="https://github.com/SJohnRose/first-day-repo"><img class="proj-image" src="./images/Proj4-image.jpg" alt="Project 4 image"/></a>
             </section>
             <section class="myproj">
                 <header> Project 5</header>
-                <img class="proj-image" src="./images/Proj5-image.jpg" alt=""/>
+                <a href="https://github.com/SJohnRose/git-init-sample"><img class="proj-image" src="./images/Proj5-image.jpg" alt="Project 5 image"/></a>
             </section>
+            </div>
         </section>
         
         <section id="contact-section">
-            <p> Contact me at </p>
+            <h2> Contact Me </h2>
+            <div class="right-border">
+            </div>
+            <div class="contact">
+            <a href="#"> 0XXXX XXXXX </a>
+            <a href="https://github.com/SJohnRose"> Shamini's Github Page</a>
+            </div>
         </section>
-        </div> 
-        </div>
-
-
+        
     </body>
 </html>
